@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>Xin chào! Tôi là bot hỗ trợ mua sắm của cửa hàng thời trang XYZ. Tôi có thể giúp gì cho bạn hôm nay?
+<carousel>
+    <card>
+        <title>Chọn mục để hỗ trợ</title>
+        <subtitle>Insert Subtitle</subtitle>
+        <button>
+            <text>Hỗ trợ mua hàng</text>
+            <postback>Hỗ Trợ mua hàng</postback>
+        </button>
+                
+    </card>
+</carousel></template>
+  </category>
+<category>
+    <pattern>Hỗ trợ mua hàng</pattern>
+    <template>Tôi sẽ giúp bạn mua hàng
+    <carousel>
+    <card>
+        <title>Vui lòng chọn thể loại</title>
+        <button>
+            <text>Áo sơ mi trắng - 500.000vnđ</text>
+            <postback>Áo sơ mi trắng</postback>
+        </button>    
+        <button>
+        <text>Áo sơ mi xanh - 550.000vnđ</text>
+        <postback>Áo sơ mi xanh</postback>
+    </button>
+    <button>
+        <text>Áo sơ mi đen - 600.000vnđ</text>
+        <postback>Áo sơ mi đen</postback>
+    </button>
+</card>
+    
+</carousel>
+    </template>
+</category>
+<category>
+    <pattern>Áo sơ mi trắng</pattern>
+    <template>Dạ áo sơ mi trắng bạn muốn chọn kích thước nào
+    <carousel>
+    <card>
+        <title>Size áo</title>
+        <button>
+            <text>Size X</text>
+            <postback>Size X</postback>
+        </button>    
+        <button>
+        <text>Size L</text>
+        <postback>Size L áo sơ mi trắng</postback>
+    </button>
+</card>
+</carousel>
+    </template>
+</category>
+<category>
+    <pattern>Size X</pattern>
+    <template>Bạn đã chọn áo sơ mi trắng kích thước size X
+<reply>
+    <text>Thanh toán ngay</text>
+    <postback>Thanh toán ngay</postback>
+</reply>
+    </template>
+</category>
+<category>
+    <pattern>Thanh toán ngay</pattern>
+    <template>Cảm ơn bạn đã thanh toán!</template>
+</category>
+</aiml>
